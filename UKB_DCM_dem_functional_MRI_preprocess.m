@@ -5,8 +5,8 @@
 
 function UKB_DCM_dem_functional_MRI_preprocess(subjects, fMRI_datadir, sMRI_datadir, maxFD)
 
-struct_ID = '_20252_2_0'; %same for all subjects
-funct_ID = '_20227_2_0'; %same for all subjects
+%struct_ID = '_20252_2_0'; %same for all subjects
+%funct_ID = '_20227_2_0'; %same for all subjects
 
 spm('Defaults','fMRI')
 

@@ -20,17 +20,17 @@ clear
 clc
 
 %user must specify path and directory for functional MRI data
-fMRI_datadir = '';
+fMRI_datadir = '/Users/gabeyawitch/Documents/Datasets/Mini FAD for DCM testing/sub-FADFMRI';
 
 %user must specify path and directory for structural MRI data
-sMRI_datadir = '';
+sMRI_datadir = '/Users/gabeyawitch/Documents/Datasets/Mini FAD for DCM testing/sub-FADFMRI';
 
 %user must specify path for SPM12 (software)
-SPM_dir = '';
+SPM_dir = '/Users/gabeyawitch/Documents/MATLAB/spm/spm.m';
 
 %Load subject IDs and demographic data
-incident = readtable('UKBW_rsfmri_F_DemIncident_F10_280623.csv');
-prevalent = readtable('UKBW_rsfmri_F_DemPrevalent_F10_280623.csv');
+incident = readtable('/Users/gabeyawitch/Documents/Datasets/Mini FAD for DCM testing/incident.csv');
+prevalent = readtable('/Users/gabeyawitch/Documents/Datasets/Mini FAD for DCM testing/prevalent.csv');
 
 demos = [incident;prevalent];
 subjects = [incident.EID;prevalent.EID];
